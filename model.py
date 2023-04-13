@@ -25,23 +25,23 @@ class GeneralModel:
     def __init__(self):
         print("Model Intilization--->")
         
-        self.personality_prompt_ = personality_prompt
-        self.listing_prompt_ = listing_prompt
-        self.model = model
+        #self.personality_prompt_ = personality_prompt
+        #self.listing_prompt_ = listing_prompt
+        #self.model = model
     
     def query(self, question_): 
         
         results = {} 
         
         response = openai.ChatCompletion.create( 
-            model=self.model, 
+            model=model, 
             temperature=0.1, 
             messages=[
                 
-                {"role": "system", "content": self.personality_prompt_}, 
+                {"role": "system", "content": personality_prompt}, 
                 {"role": "system", "content": "Only answer questions from the information provided in the user content"},
                 {"role": "system", "content": "Do not answer any questions realted to nearby places or points of interest, redirect them to the Nearby Points of Interest section on this page"},
-                {"role": "user", "content": f"{self.listing_prompt_}\n {question_}"} 
+                {"role": "user", "content": f"{listing_prompt}\n {question_}"} 
             
             ]
             
