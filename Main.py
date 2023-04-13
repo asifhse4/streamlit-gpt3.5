@@ -10,7 +10,7 @@ def app():
 
     image = Image.open('listing_image.png')
 
-    st.image(image, caption='50 Candle Ter SW Calgary, AB')
+    st.image(image, caption='377 Sackville St Toronto, ON M5A 3G5')
     
     # https://www.ojohome.ca/calgary-ab/50-candle-ter-sw-calgary-ab-t2w-6g7/pid_yealetr3cm/
     
