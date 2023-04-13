@@ -1,6 +1,7 @@
 import openai
 
 start_sequence = "\nOJO:"
+
 restart_sequence = "\n\nUser:"
 
 listing_address = "377 Sackville St, Toronto, ON, M5A 3G5, Canada"

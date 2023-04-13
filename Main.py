@@ -2,7 +2,6 @@ import streamlit as st
 from model import GeneralModel
 from PIL import Image
 
-
 def app():
 
     # Creating an object of prediction service
