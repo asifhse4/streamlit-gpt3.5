@@ -43,7 +43,9 @@ class GeneralModel:
                 {"role": "system", "content": "Do not answer any questions realted to nearby places or points of interest, redirect them to the Nearby Points of Interest section on this page"},
                 {"role": "user", "content": f"{self.listing_prompt_}\n {question_}"} 
             
-            ],
+            ]
+            
+        )
                       
              
         results["response"] = response["choices"][0]["message"]["content"] 
