@@ -27,9 +27,9 @@ def app():
 
         # st.write("---")
 
-        s_example = "Is there a park nearby?"
+        s_example = "Is the place walkable and good for cycling?"
         input = st.text_area(
-            "Use the example below or input your own text in English",
+            "Use the example below or input your own text in any language",
             value=s_example,
             max_chars=300,
             height=100,
